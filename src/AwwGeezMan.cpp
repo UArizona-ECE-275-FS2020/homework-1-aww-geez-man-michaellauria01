@@ -25,6 +25,7 @@ int main(int ac, char** av) {
 		return -1;
 	}
 
+	
 	start = atoi(av[2]);
 	stop = atoi(av[3]);
 	if (ac == 6) {
