@@ -15,7 +15,7 @@ using namespace Z286;
 
 int main(int ac, char** av) {
 
-	int id = 4, start, stop, step = 0;
+	int id = 3, start, stop, step = 0;
 
 	if (ac != 5 and ac != 4) {
 		std::cout << "Error: Command line arguments are incorrect. Call program as (1) or (2)"
