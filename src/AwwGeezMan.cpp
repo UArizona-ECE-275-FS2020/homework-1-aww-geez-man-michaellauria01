@@ -2,6 +2,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /*
 Author: Michael Lauria
@@ -25,7 +26,6 @@ int main(int ac, char** av) {
 		return -1;
 	}
 
-	
 	start = atoi(av[2]);
 	stop = atoi(av[3]);
 	if (ac == 6) {
@@ -38,15 +38,18 @@ int main(int ac, char** av) {
 
 	if (strcmp(dim, "C137") == 0) {
 		if (step == 0)
-		C137::Morty(start, stop);
-		else 
-		C137::Morty(start, stop, step);
+			C137::Morty(start, stop);
+		else
+			C137::Morty(start, stop, step);
 	}
 	else if (strcmp(dim, "Z286") == 0) {
 		if (step == 0)
-		Z286::Morty(start, stop);
-		else 
-		Z286::Morty(start, stop, step);
+			Z286::Morty(start, stop);
+		else
+			Z286::Morty(start, stop, step);
+	}
+	else {
+		printf("ERROR: Unknown dimension!!\n");
 	}
 
 	return 0;
