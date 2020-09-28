@@ -17,7 +17,7 @@ int main(int ac, char** av) {
 
 	int id = 4, start, stop, step = 0;
 
-	if (ac != 6 and ac != 5) {
+	if (ac != 5 and ac != 4) {
 		std::cout << "Error: Command line arguments are incorrect. Call program as (1) or (2)"
 			<< std::endl;
 		std::cout << "(1)\t./AwwGeezMan {start} {stop} {dimension}" << std::endl;
@@ -26,11 +26,11 @@ int main(int ac, char** av) {
 		return -1;
 	}
 
-	start = atoi(av[2]);
-	stop = atoi(av[3]);
-	if (ac == 6) {
-		step = atoi(av[4]);
-		id = 5;
+	start = atoi(av[1]);
+	stop = atoi(av[2]);
+	if (ac == 5) {
+		step = atoi(av[3]);
+		id = 4;
 	}
 	char* dim = av[id];
 
