@@ -34,15 +34,17 @@ int main(int ac, char** av) {
 	}
 	char* dim = av[id];
 
-	printf("Morty %s says:\n", dim);
+	
 
 	if (strcmp(dim, "C137") == 0) {
+		printf("Morty %s says:\n", dim);
 		if (step == 0)
 			C137::Morty(start, stop);
 		else
 			C137::Morty(start, stop, step);
 	}
 	else if (strcmp(dim, "Z286") == 0) {
+		printf("Morty %s says:\n", dim);
 		if (step == 0)
 			Z286::Morty(start, stop);
 		else
